@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>687033662493-liljacriscbgqurebs4r87clfrb459eb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.687033662493-liljacriscbgqurebs4r87clfrb459eb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDW9p2qhkOmCp5JGGRDCTAxxE0JZML-weI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>687033662493</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Meataddlikesgridswed</string>
+	<key>PROJECT_ID</key>
+	<string>instagramhub4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>instagramhub4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:687033662493:ios:69879f0af48ce33d811af4</string>
+	<key>DATABASE_URL</key>
+	<string>https://instagramhub4.firebaseio.com</string>
+</dict>
+</plist>

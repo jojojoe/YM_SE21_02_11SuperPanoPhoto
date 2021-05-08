@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CAD94C0702739AAF614E529 /* Pods_SPPymSuperPanoPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11C97B0FFED62C0B0F0F409 /* Pods_SPPymSuperPanoPhoto.framework */; };
+		EB1BEE982644E5C4001F6666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEE972644E5C4001F6666 /* AppDelegate.swift */; };
+		EB1BEE9A2644E5C4001F6666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEE992644E5C4001F6666 /* SceneDelegate.swift */; };
+		EB1BEE9C2644E5C4001F6666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEE9B2644E5C4001F6666 /* ViewController.swift */; };
+		EB1BEE9F2644E5C4001F6666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BEE9D2644E5C4001F6666 /* Main.storyboard */; };
+		EB1BEEA12644E5C5001F6666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1BEEA02644E5C5001F6666 /* Assets.xcassets */; };
+		EB1BEEA42644E5C5001F6666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1BEEA22644E5C5001F6666 /* LaunchScreen.storyboard */; };
+		EB1BEEAF2644E8C4001F6666 /* SPPymMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEAE2644E8C4001F6666 /* SPPymMainVC.swift */; };
+		EB1BEEB52644EA8F001F6666 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB1BEEB12644EA8F001F6666 /* GoogleService-Info.plist */; };
+		EB1BEEB62644EA8F001F6666 /* APLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEB22644EA8F001F6666 /* APLoginVC.swift */; };
+		EB1BEEB72644EA8F001F6666 /* ApLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEB32644EA8F001F6666 /* ApLoginManager.swift */; };
+		EB1BEEB82644EA8F001F6666 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEB42644EA8F001F6666 /* Keychain.swift */; };
+		EB1BEEBC2644EAB3001F6666 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEBA2644EAB3001F6666 /* DataManager.swift */; };
+		EB1BEEBD2644EAB3001F6666 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEBB2644EAB3001F6666 /* CoinManager.swift */; };
+		EB1BEEC32645334B001F6666 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEC22645334B001F6666 /* test.m */; };
+		EB1BEECA26464840001F6666 /* SPPymSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEC926464840001F6666 /* SPPymSettingVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89BCB290EF869EF614CA8418 /* Pods-SPPymSuperPanoPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPPymSuperPanoPhoto.debug.xcconfig"; path = "Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto.debug.xcconfig"; sourceTree = "<group>"; };
+		92427678604B9CF7937262F7 /* Pods-SPPymSuperPanoPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPPymSuperPanoPhoto.release.xcconfig"; path = "Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto.release.xcconfig"; sourceTree = "<group>"; };
+		D11C97B0FFED62C0B0F0F409 /* Pods_SPPymSuperPanoPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPPymSuperPanoPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BEE942644E5C4001F6666 /* SPPymSuperPanoPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPPymSuperPanoPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1BEE972644E5C4001F6666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB1BEE992644E5C4001F6666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB1BEE9B2644E5C4001F6666 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB1BEE9E2644E5C4001F6666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB1BEEA02644E5C5001F6666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1BEEA32644E5C5001F6666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB1BEEA52644E5C5001F6666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1BEEAE2644E8C4001F6666 /* SPPymMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPymMainVC.swift; sourceTree = "<group>"; };
+		EB1BEEB12644EA8F001F6666 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB1BEEB22644EA8F001F6666 /* APLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLoginVC.swift; sourceTree = "<group>"; };
+		EB1BEEB32644EA8F001F6666 /* ApLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApLoginManager.swift; sourceTree = "<group>"; };
+		EB1BEEB42644EA8F001F6666 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		EB1BEEBA2644EAB3001F6666 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EB1BEEBB2644EAB3001F6666 /* CoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		EB1BEEC02645334B001F6666 /* SPPymSuperPanoPhoto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPPymSuperPanoPhoto-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB1BEEC12645334B001F6666 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		EB1BEEC22645334B001F6666 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		EB1BEEC926464840001F6666 /* SPPymSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPymSettingVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1BEE912644E5C4001F6666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAD94C0702739AAF614E529 /* Pods_SPPymSuperPanoPhoto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89833C14F86064696DC3EA16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89BCB290EF869EF614CA8418 /* Pods-SPPymSuperPanoPhoto.debug.xcconfig */,
+				92427678604B9CF7937262F7 /* Pods-SPPymSuperPanoPhoto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB1BEE8B2644E5C4001F6666 = {
+			isa = PBXGroup;
+			children = (
+				EB1BEE962644E5C4001F6666 /* SPPymSuperPanoPhoto */,
+				EB1BEE952644E5C4001F6666 /* Products */,
+				89833C14F86064696DC3EA16 /* Pods */,
+				FA7F088C6D80A6A40C5B4E54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1BEE952644E5C4001F6666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BEE942644E5C4001F6666 /* SPPymSuperPanoPhoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1BEE962644E5C4001F6666 /* SPPymSuperPanoPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BEEAC2644E8AB001F6666 /* Tree */,
+				EB1BEEAB2644E8A2001F6666 /* Root */,
+			);
+			path = SPPymSuperPanoPhoto;
+			sourceTree = "<group>";
+		};
+		EB1BEEAB2644E8A2001F6666 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BEE972644E5C4001F6666 /* AppDelegate.swift */,
+				EB1BEE992644E5C4001F6666 /* SceneDelegate.swift */,
+				EB1BEE9B2644E5C4001F6666 /* ViewController.swift */,
+				EB1BEE9D2644E5C4001F6666 /* Main.storyboard */,
+				EB1BEEA02644E5C5001F6666 /* Assets.xcassets */,
+				EB1BEEA22644E5C5001F6666 /* LaunchScreen.storyboard */,
+				EB1BEEA52644E5C5001F6666 /* Info.plist */,
+				EB1BEEC12645334B001F6666 /* test.h */,
+				EB1BEEC22645334B001F6666 /* test.m */,
+				EB1BEEC02645334B001F6666 /* SPPymSuperPanoPhoto-Bridging-Header.h */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		EB1BEEAC2644E8AB001F6666 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BEEB92644EA9D001F6666 /* DMDataManager */,
+				EB1BEEB02644EA80001F6666 /* PGLoginManager */,
+				EB1BEEAD2644E8B3001F6666 /* Main */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		EB1BEEAD2644E8B3001F6666 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BEEAE2644E8C4001F6666 /* SPPymMainVC.swift */,
+				EB1BEEC926464840001F6666 /* SPPymSettingVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EB1BEEB02644EA80001F6666 /* PGLoginManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BEEB32644EA8F001F6666 /* ApLoginManager.swift */,
+				EB1BEEB22644EA8F001F6666 /* APLoginVC.swift */,
+				EB1BEEB12644EA8F001F6666 /* GoogleService-Info.plist */,
+				EB1BEEB42644EA8F001F6666 /* Keychain.swift */,
+			);
+			path = PGLoginManager;
+			sourceTree = "<group>";
+		};
+		EB1BEEB92644EA9D001F6666 /* DMDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB1BEEBB2644EAB3001F6666 /* CoinManager.swift */,
+				EB1BEEBA2644EAB3001F6666 /* DataManager.swift */,
+			);
+			path = DMDataManager;
+			sourceTree = "<group>";
+		};
+		FA7F088C6D80A6A40C5B4E54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D11C97B0FFED62C0B0F0F409 /* Pods_SPPymSuperPanoPhoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1BEE932644E5C4001F6666 /* SPPymSuperPanoPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1BEEA82644E5C5001F6666 /* Build configuration list for PBXNativeTarget "SPPymSuperPanoPhoto" */;
+			buildPhases = (
+				40F1F9E661D46408E6E6A054 /* [CP] Check Pods Manifest.lock */,
+				EB1BEE902644E5C4001F6666 /* Sources */,
+				EB1BEE912644E5C4001F6666 /* Frameworks */,
+				EB1BEE922644E5C4001F6666 /* Resources */,
+				5DFF13F383D1354244CD7A71 /* [CP] Embed Pods Frameworks */,
+				152405AD55DE4E0DFD64C522 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPPymSuperPanoPhoto;
+			productName = SPPymSuperPanoPhoto;
+			productReference = EB1BEE942644E5C4001F6666 /* SPPymSuperPanoPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1BEE8C2644E5C4001F6666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EB1BEE932644E5C4001F6666 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = EB1BEE8F2644E5C4001F6666 /* Build configuration list for PBXProject "SPPymSuperPanoPhoto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1BEE8B2644E5C4001F6666;
+			productRefGroup = EB1BEE952644E5C4001F6666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1BEE932644E5C4001F6666 /* SPPymSuperPanoPhoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1BEE922644E5C4001F6666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BEEA42644E5C5001F6666 /* LaunchScreen.storyboard in Resources */,
+				EB1BEEB52644EA8F001F6666 /* GoogleService-Info.plist in Resources */,
+				EB1BEEA12644E5C5001F6666 /* Assets.xcassets in Resources */,
+				EB1BEE9F2644E5C4001F6666 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		152405AD55DE4E0DFD64C522 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40F1F9E661D46408E6E6A054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPPymSuperPanoPhoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DFF13F383D1354244CD7A71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SPPymSuperPanoPhoto/Pods-SPPymSuperPanoPhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1BEE902644E5C4001F6666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1BEE9C2644E5C4001F6666 /* ViewController.swift in Sources */,
+				EB1BEEBC2644EAB3001F6666 /* DataManager.swift in Sources */,
+				EB1BEE982644E5C4001F6666 /* AppDelegate.swift in Sources */,
+				EB1BEEB72644EA8F001F6666 /* ApLoginManager.swift in Sources */,
+				EB1BEE9A2644E5C4001F6666 /* SceneDelegate.swift in Sources */,
+				EB1BEEC32645334B001F6666 /* test.m in Sources */,
+				EB1BEEAF2644E8C4001F6666 /* SPPymMainVC.swift in Sources */,
+				EB1BEEB62644EA8F001F6666 /* APLoginVC.swift in Sources */,
+				EB1BEEB82644EA8F001F6666 /* Keychain.swift in Sources */,
+				EB1BEECA26464840001F6666 /* SPPymSettingVC.swift in Sources */,
+				EB1BEEBD2644EAB3001F6666 /* CoinManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB1BEE9D2644E5C4001F6666 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1BEE9E2644E5C4001F6666 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB1BEEA22644E5C5001F6666 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1BEEA32644E5C5001F6666 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1BEEA62644E5C5001F6666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB1BEEA72644E5C5001F6666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB1BEEA92644E5C5001F6666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89BCB290EF869EF614CA8418 /* Pods-SPPymSuperPanoPhoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPPymSuperPanoPhoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ym.SPPymSuperPanoPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPPymSuperPanoPhoto/SPPymSuperPanoPhoto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB1BEEAA2644E5C5001F6666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92427678604B9CF7937262F7 /* Pods-SPPymSuperPanoPhoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SPPymSuperPanoPhoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ym.SPPymSuperPanoPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPPymSuperPanoPhoto/SPPymSuperPanoPhoto-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1BEE8F2644E5C4001F6666 /* Build configuration list for PBXProject "SPPymSuperPanoPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BEEA62644E5C5001F6666 /* Debug */,
+				EB1BEEA72644E5C5001F6666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1BEEA82644E5C5001F6666 /* Build configuration list for PBXNativeTarget "SPPymSuperPanoPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1BEEA92644E5C5001F6666 /* Debug */,
+				EB1BEEAA2644E5C5001F6666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB1BEE8C2644E5C4001F6666 /* Project object */;
+}

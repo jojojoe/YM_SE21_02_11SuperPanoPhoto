@@ -1,0 +1,7 @@
+SPPymSuperPanoPhoto.xcodeproj/xcuserdata/
+SPPymSuperPanoPhoto.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+SPPymSuperPanoPhoto.xcodeproj/project.xcworkspace/xcuserdata/
