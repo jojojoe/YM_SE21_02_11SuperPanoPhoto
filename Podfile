@@ -12,15 +12,18 @@ target 'SPPymSuperPanoPhoto' do
   pod 'Defaults'
   pod 'NoticeObserveKit'
   pod 'Adjust'
-  pod 'GPUImage'
+#  pod 'GPUImage'
+  pod 'YPImagePicker'
+  pod 'SVGKit'
+
   
   #  UI
   pod 'SnapKit'
-  
+  pod 'Then'
   #  Alert
   pod 'Alertift'
   pod 'ZKProgressHUD'
-  
+  pod 'SVProgressHUD'
   #  Store
   pod 'SwiftyStoreKit'
   pod 'TPInAppReceipt'

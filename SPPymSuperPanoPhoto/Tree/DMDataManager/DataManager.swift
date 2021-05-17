@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import GPUImage
 import SwifterSwift
 class GCFilterItem: Codable {
 
@@ -51,7 +50,6 @@ class DataManager: NSObject {
     var textColors: [String] = []
     var textFontNames: [String] = []
     var bgColors: [String] = []
-    
     var gridList: [GridItem] {
         return DataManager.default.loadJson([GridItem].self, name: "GridList") ?? []
     }
@@ -65,6 +63,14 @@ class DataManager: NSObject {
     var stickerList : [GCStickerItem] {
         return DataManager.default.loadJson([GCStickerItem].self, name: "StickerList") ?? []
     }
+    var slideMoban1List: [String] = ["moban1_1"]
+    var slideMoban2List: [String] = ["moban2_1","moban2_2","moban2_3","moban2_4","moban2_5","moban2_6"]
+    var slideMoban3List: [String] = ["moban3_1","moban3_2","moban3_3","moban3_4","moban3_5","moban3_6"]
+    var slideMoban4List: [String] = ["moban4_1","moban4_2","moban4_3","moban4_4","moban4_5","moban4_6","moban4_7"]
+    var slideMoban5List: [String] = ["moban5_1","moban5_2","moban5_3","moban5_4","moban5_5","moban5_6","moban5_7","moban5_8"]
+    var slideMoban6List: [String] = ["moban6_1","moban6_2","moban6_3","moban6_4","moban6_5","moban6_6","moban6_7","moban6_8"]
+    
+    
     
     override init() {
         super.init()

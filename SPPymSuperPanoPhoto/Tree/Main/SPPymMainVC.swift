@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import YPImagePicker
 
 class SPPymMainVC: UIViewController {
+    
     let contentBgView = UIView()
     var settingBtn = UIButton(type: .custom)
     var nameLabel = UILabel()
@@ -59,9 +61,8 @@ extension SPPymMainVC {
             $0.width.equalTo(110)
         }
         panoBtn.clickBlock = {
-            [weak self] in
-            guard let `self` = self else {return}
             
+            self.showPanoSelectVC()
         }
         //
         let photoBtn = MainCenterToolBtn(frame: .zero, bgColor: UIColor(hexString: "#B7D09B") ?? .white, iconImg: UIImage(named: "home_collage_ic")!, nameTitle: "Photo Splicing")
@@ -73,9 +74,8 @@ extension SPPymMainVC {
             $0.width.equalTo(110)
         }
         photoBtn.clickBlock = {
-            [weak self] in
-            guard let `self` = self else {return}
-            
+             
+            self.showMultiPhotoSelectVC()
         }
         
         //
@@ -92,15 +92,17 @@ extension SPPymMainVC {
             $0.height.equalTo(72)
         }
         storeBtn.clickBlock = {
-            [weak self] in
-            guard let `self` = self else {return}
-            
+            DispatchQueue.main.async {
+                [weak self] in
+                guard let `self` = self else {return}
+                self.navigationController?.pushViewController(SPPymStoreVC())
+            }
         }
     }
     
     func makeLabelTitle() -> UILabel {
         let titleNameLabel = UILabel()
-        titleNameLabel.font = UIFont(name: "Alstoria", size: 60)
+        titleNameLabel.font = UIFont(name: "Alstoria-Regular", size: 60)
         titleNameLabel.textColor = UIColor(hexString: "#FFFFFF")
         titleNameLabel.text = "Photo\nSplicing"
         titleNameLabel.textAlignment = .left
@@ -138,12 +140,91 @@ extension SPPymMainVC {
         return btn
     }
     @objc func btnClickSetting(sender: UIButton) {
-         
+        self.navigationController?.pushViewController(SPPymSettingVC(), animated: true)
     }
     
 }
 
-
+extension SPPymMainVC {
+    func showPanoSelectVC() {
+        
+        let selectPhotoVC = SelectPhotoAlbumViewController()
+        self.navigationController?.pushViewController(selectPhotoVC)
+         
+    }
+    
+    func showMultiPhotoSelectVC() {
+//
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0) {
+            GetSystemPermissions.getPhotoPermissions {[weak self] (agree) in
+                if agree {
+                    //
+                    self?.showYPImagePicker()
+                    //
+                } else {
+                    self?.permissionsAlet()
+                }
+            }
+        }
+    }
+    
+    func showYPImagePicker() {
+        var config = YPImagePickerConfiguration()
+        config.library.maxNumberOfItems = 6
+        config.screens = [.library]
+        config.library.defaultMultipleSelection = true
+        config.library.skipSelectionsGallery = true
+        config.showsPhotoFilters = false
+        let picker = YPImagePicker(configuration: config)
+        picker.didFinishPicking { [unowned picker] items, cancelled in
+            var imgs: [UIImage] = []
+            for item in items {
+                switch item {
+                case .photo(let photo):
+                    if let img = photo.image.scaled(toWidth: 1200) {
+                        imgs.append(img)
+                    }
+                    print(photo)
+                case .video(let video):
+                    print(video)
+                }
+            }
+            picker.dismiss(animated: true, completion: nil)
+            
+            self.showPhotoMultiEditVC(imgs: imgs)
+            
+        }
+        
+        present(picker, animated: true, completion: nil)
+    }
+    
+    
+    func permissionsAlet() {
+        let alert = UIAlertController(title: "", message: "You have declined access to photo, please active it in Settings>Privacy>Photo.", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default) { [weak self] (actioin) in
+            self?.openSettingPage()
+        }
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            
+        }
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func openSettingPage() {
+        let url = NSURL.init(string: UIApplication.openSettingsURLString)
+        let canOpen = UIApplication.shared.canOpenURL(url! as URL)
+        if canOpen {
+            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+        }
+    }
+    
+    func showPhotoMultiEditVC(imgs: [UIImage]) {
+        let editVC = SSPPhotoMultiSlideEditVC(images: imgs)
+        self.navigationController?.pushViewController(editVC)
+    }
+}
 
 
 class MainCenterToolBtn: UIButton {
@@ -167,6 +248,7 @@ class MainCenterToolBtn: UIButton {
     
     func setupView() {
         let bgView = UIView()
+        bgView.isUserInteractionEnabled = false
         bgView.backgroundColor = bgColor
         bgView.layer.cornerRadius = 32
         addSubview(bgView)
@@ -198,7 +280,7 @@ class MainCenterToolBtn: UIButton {
         
         func makeLabel() -> UILabel {
             let label = UILabel()
-            label.font = UIFont(name: "Alstoria", size: 18)
+            label.font = UIFont(name: "Alstoria-Regular", size: 18)
             label.textColor = bgColor
             label.text = nameTitle
             label.textAlignment = .left
@@ -257,7 +339,7 @@ class MainCoinStoreBtn: UIButton {
         }
         func makeLabel() -> UILabel {
             let label = UILabel()
-            label.font = UIFont(name: "Alstoria", size: 18)
+            label.font = UIFont(name: "Alstoria-Regular", size: 18)
             label.textColor = UIColor(hexString: "#ECA86B")
             label.text = "Coins Store"
             label.textAlignment = .center

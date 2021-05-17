@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>moban5_2</title>
+    <g id="moban5_2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="view1" fill="#D8D8D8" x="0" y="0" width="120" height="24"></rect>
+        <rect id="view2" fill="#B2B2B2" x="0" y="24" width="120" height="24"></rect>
+        <rect id="view3" fill="#9A9A9A" x="0" y="48" width="120" height="24"></rect>
+        <rect id="view4" fill="#818181" x="0" y="72" width="120" height="24"></rect>
+        <rect id="view5" fill="#646464" x="0" y="96" width="120" height="24"></rect>
+    </g>
+</svg>

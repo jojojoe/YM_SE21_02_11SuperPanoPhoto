@@ -16,12 +16,33 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.687033662493-liljacriscbgqurebs4r87clfrb459eb</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>App needs your camera permission to select photo and edit it shape, cut it, add text and other effect.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App needs your photo gallery permission to select photo and edit it shape, cut it, add text and other effect.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App needs your photo gallery permission to select photo and edit it shape, cut it, add text and other effect.</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>This identifier will be used to personalize ads to you</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Alstoria Demo.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

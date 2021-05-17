@@ -35,7 +35,12 @@ class APLoginVC: FUIAuthPickerViewController, FUIAuthDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let bgImgV = UIImageView(image: UIImage(named: "home_bg_pic"))
+        bgImgV.contentMode = .scaleAspectFill
+        view.addSubview(bgImgV)
+        bgImgV.snp.makeConstraints {
+            $0.top.left.right.bottom.equalToSuperview()
+        }
         self.findButtons(subView: self.view)
         setupView()
         
@@ -165,7 +170,7 @@ extension APLoginVC {
         
         let closebutton = UIButton()
         closebutton.alpha = 1
-        closebutton.setImage(UIImage(named: "splash_icon_close"), for: .normal)
+        closebutton.setImage(UIImage(named: "pano_back_ic"), for: .normal)
         closebutton.addTarget(self, action: #selector(closebuttonClick(button:)), for: .touchUpInside)
         topView.addSubview(closebutton)
         closebutton.snp.makeConstraints { (make) in

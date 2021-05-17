@@ -49,8 +49,8 @@ class CoinManager: ObservableObject {
     
     static let `default` = CoinManager()
     
-    let coinFirst: Int = 100
-    let coinCostCount: Int = 50
+    let coinFirst: Int = 200
+    let coinCostCount: Int = 100
     
     let k_localizedPriceList = "StoreItem.localizedPriceList"
     

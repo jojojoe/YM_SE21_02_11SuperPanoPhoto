@@ -44,7 +44,7 @@ extension AppDelegate: AdjustDelegate {
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     static var deviceTokenStr: String = ""
-    
+    static var hasLoadPanoPhotoAsset: Bool = false
     var window: UIWindow?
     var mainVC: SPPymMainVC = SPPymMainVC()
     
