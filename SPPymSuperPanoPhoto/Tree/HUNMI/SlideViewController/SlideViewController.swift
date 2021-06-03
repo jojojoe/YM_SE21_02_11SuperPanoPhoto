@@ -8,7 +8,7 @@
 
 import UIKit
 import Photos
-
+import DeviceKit
 
 
 class SlideViewController: UIViewController {
@@ -49,10 +49,13 @@ class SlideViewController: UIViewController {
             tool.backgroundColor = UIColor.color(hexString: "#FFFFFF")
             tool.delegate = self
             bottomBgView.addSubview(tool)
-
+            var height: CGFloat = 170
+            if Device.current.diagonal <= 5.5 || Device.current.diagonal >= 7.9 {
+                height = 145
+            }
             tool.snp.makeConstraints { (make) in
                 make.left.right.equalTo(0)
-                make.height.equalTo(170)
+                make.height.equalTo(height)
                 make.centerY.equalToSuperview()
             }
         })
@@ -177,7 +180,7 @@ extension SlideViewController {
 
         DispatchQueue.main.async {
             let title = ""
-            let message = "The Photo Saved Successfully In Album."
+            let message = "Photo Storage Successful."
             let okText = "OK"
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let okButton = UIAlertAction(title: okText, style: .cancel, handler: { (alert) in

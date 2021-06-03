@@ -7,41 +7,6 @@
 
 import UIKit
 import SwifterSwift
-class GCFilterItem: Codable {
-
-    let filterName : String
-    let type : String
-    let imageName : String
-    
-    enum CodingKeys: String, CodingKey {
-        case filterName
-        case type
-        case imageName
-    }
-    
-}
-
-
-struct GridItem: Codable {
-    var isPro: Bool? = false
-    var thumb: String? = ""
-    var gridIndexs: [Int]? = [0, 3, 6,]
-    
-}
-
-struct ShapeItem: Codable {
-    var isPro: Bool? = false
-    var thumb: String? = ""
-    var bigImg: String? = ""
-    
-}
-
-
-class GCStickerItem: Codable {
-    let contentImageName : String
-    let thumbnail : String
-    let isPro : Bool?
-}
 
 
 class DataManager: NSObject {

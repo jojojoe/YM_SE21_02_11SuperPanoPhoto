@@ -16,9 +16,9 @@ import AppTrackingTransparency
 
 // he /*
 enum AdjustKey: String {
-    case AdjustKeyAppToken = "xh3d8md683y8"
-    case AdjustKeyAppLaunch = "iq557q"
-    case AdjustKeyAppCoinsBuy = "2u5clm"
+    case AdjustKeyAppToken = "35eatakch9c0"
+    case AdjustKeyAppLaunch = "cg8d2x"
+    case AdjustKeyAppCoinsBuy = "2rvhgb"
     case AdjustUserDefaultTrackerName = "udTrackerName"
     case AdjustNotiTrackerName = "notiNotiTrackerName"
 }
@@ -94,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         registerNotifications(application)
         
         // he /*
-//        initCore()
+        initCore()
         // he */
         
         trackeringAuthor()
@@ -112,8 +112,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        NotificationCenter.default.post(name: .Pre,
 //                                        object: [
-//                                            HightLigtingHelper.default.debugBundleIdentifier = "com.Meataddlikesgridswed",
-//                                            HightLigtingHelper.default.setProductUrl(string: "https://getpop.icu/new/")])
+//                                            HightLigtingHelper.default.debugBundleIdentifier = "com.superlikesfans.instapic",
+//                                            HightLigtingHelper.default.setProductUrl(string: "https://hishape.site/new/")])
         // he */
     }
     

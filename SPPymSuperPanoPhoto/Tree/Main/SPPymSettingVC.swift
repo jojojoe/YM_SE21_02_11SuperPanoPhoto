@@ -11,13 +11,13 @@ import StoreKit
 import Defaults
 import NoticeObserveKit
 
-
-let AppName: String = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String ?? "Insta Gird"
+//Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String ?? 
+let AppName: String = "Pano Master"
 let purchaseUrl = ""
-let TermsofuseURLStr = "http://certain-direction.surge.sh/Terms_of_use.html"
-let PrivacyPolicyURLStr = "http://adorable-muscle.surge.sh/Privacy_Agreement.html"
+let TermsofuseURLStr = "http://unable-spark.surge.sh/Terms_of_use.html"
+let PrivacyPolicyURLStr = "http://illegal-protest.surge.sh/Privacy_Agreement.html"
 
-let feedbackEmail: String = "xjabsuauxnd@yandex.com"
+let feedbackEmail: String = "feysuzjich@yandex.com"
 let AppAppStoreID: String = ""
 
 
@@ -52,6 +52,11 @@ class SPPymSettingVC: UIViewController {
         setupContentView()
         updateUserAccountStatus()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUserAccountStatus()
     }
     
     func setupView() {

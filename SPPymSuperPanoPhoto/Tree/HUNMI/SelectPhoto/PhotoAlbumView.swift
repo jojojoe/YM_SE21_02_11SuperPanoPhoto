@@ -444,24 +444,33 @@ extension PhotoAlbumView: UICollectionViewDelegate, UICollectionViewDataSource {
             return item == indexPath.row
         })
         
-        if (isContains ?? false) || (selectPHAssetNumber?.count ?? 0) >= selectMaxPhotoNum {
-            for (index, obj) in (selectPHAssetNumber?.enumerated())! {
-                if obj == indexPath.row {
-                    selectPHAssetNumber?.remove(at: index)
-                    break
-                }
-            }
+        if isContains == true {
+            
         } else {
-            
-            if (selectPHAssetNumber?.count ?? 0) >= selectMaxPhotoNum {
-                
-            } else {
-                selectPHAssetNumber?.append(indexPath.row)
-            }
-            
+            selectPHAssetNumber?.removeAll()
+            selectPHAssetNumber?.append(indexPath.row)
+            collectionView.reloadData()
         }
         
-        collectionView.reloadData()
+        
+//        if (isContains ?? false) || (selectPHAssetNumber?.count ?? 0) >= selectMaxPhotoNum {
+//            for (index, obj) in (selectPHAssetNumber?.enumerated())! {
+//                if obj == indexPath.row {
+//                    selectPHAssetNumber?.remove(at: index)
+//                    break
+//                }
+//            }
+//        } else {
+//
+//            if (selectPHAssetNumber?.count ?? 0) >= selectMaxPhotoNum {
+//
+//            } else {
+//                selectPHAssetNumber?.append(indexPath.row)
+//            }
+//
+//        }
+//
+//        collectionView.reloadData()
     }
     
     func initialzierSelect() {

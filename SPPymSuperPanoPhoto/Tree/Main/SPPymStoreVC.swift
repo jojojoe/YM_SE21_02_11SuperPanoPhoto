@@ -102,7 +102,7 @@ extension SPPymStoreVC {
     
     func setupCollection() {
         // collection
-        let layout = UICollectionViewFlowLayout()
+        let layout = UICollectionVGCStoreCelliewFlowLayout()
         layout.scrollDirection = .vertical
         collection = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
         collection.showsHorizontalScrollIndicator = false
@@ -160,16 +160,18 @@ extension SPPymStoreVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let left = ((UIScreen.main.bounds.width - 110 * 2 - 24 - 1) / 2)
+        let left = ((UIScreen.main.bounds.width - 110 * 2 - 1) / 3)
         return UIEdgeInsets(top: 0, left: left, bottom: 20, right: left)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        let left = ((UIScreen.main.bounds.width - 110 * 2 - 1) / 3)
         return 24
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 24
+        let left = ((UIScreen.main.bounds.width - 110 * 2 - 1) / 3)
+        return left
     }
     
 }

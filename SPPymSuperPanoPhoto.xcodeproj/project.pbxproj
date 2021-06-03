@@ -26,6 +26,47 @@
 		EB1BEEC32645334B001F6666 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEC22645334B001F6666 /* test.m */; };
 		EB1BEECA26464840001F6666 /* SPPymSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEEC926464840001F6666 /* SPPymSettingVC.swift */; };
 		EB1BEED126467FF0001F6666 /* SPPToolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1BEED026467FF0001F6666 /* SPPToolExtension.swift */; };
+		EB3B27142654B43B005A7B63 /* InnLoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26A32654B43A005A7B63 /* InnLoginHandler.swift */; };
+		EB3B27152654B43B005A7B63 /* Untitled.html in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26A42654B43A005A7B63 /* Untitled.html */; };
+		EB3B27162654B43B005A7B63 /* InnTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26A52654B43A005A7B63 /* InnTextView.swift */; };
+		EB3B27172654B43B005A7B63 /* InnNativeWebLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26A62654B43A005A7B63 /* InnNativeWebLoginViewController.swift */; };
+		EB3B27182654B43B005A7B63 /* InnTwoFactorLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26A72654B43A005A7B63 /* InnTwoFactorLoginView.swift */; };
+		EB3B27192654B43B005A7B63 /* VC+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26A92654B43A005A7B63 /* VC+Route.swift */; };
+		EB3B271A2654B43B005A7B63 /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26AA2654B43A005A7B63 /* SwiftyTimer.swift */; };
+		EB3B271B2654B43B005A7B63 /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26AB2654B43A005A7B63 /* Foundation+Extension.swift */; };
+		EB3B271C2654B43B005A7B63 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26AC2654B43A005A7B63 /* UIKitExtension.swift */; };
+		EB3B271D2654B43B005A7B63 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26AD2654B43A005A7B63 /* StringExtension.swift */; };
+		EB3B271E2654B43B005A7B63 /* loding2.webp in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26AE2654B43A005A7B63 /* loding2.webp */; };
+		EB3B271F2654B43B005A7B63 /* InnLoginChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26AF2654B43A005A7B63 /* InnLoginChallengeView.swift */; };
+		EB3B27592654B43B005A7B63 /* InnRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26F62654B43A005A7B63 /* InnRequestHelper.swift */; };
+		EB3B275A2654B43B005A7B63 /* Loding1.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26F72654B43A005A7B63 /* Loding1.gif */; };
+		EB3B275B2654B43B005A7B63 /* InnLoginVerifyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B26F82654B43A005A7B63 /* InnLoginVerifyCodeView.swift */; };
+		EB3B275C2654B43B005A7B63 /* ic_a_c@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26FA2654B43A005A7B63 /* ic_a_c@3x.png */; };
+		EB3B275D2654B43B005A7B63 /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26FB2654B43A005A7B63 /* login.html */; };
+		EB3B275E2654B43B005A7B63 /* ic_a_c@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26FC2654B43A005A7B63 /* ic_a_c@2x.png */; };
+		EB3B275F2654B43B005A7B63 /* log_in_close_ic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26FD2654B43A005A7B63 /* log_in_close_ic@3x.png */; };
+		EB3B27602654B43B005A7B63 /* ic_c_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26FE2654B43A005A7B63 /* ic_c_s@3x.png */; };
+		EB3B27612654B43B005A7B63 /* ic_c_us@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B26FF2654B43A005A7B63 /* ic_c_us@3x.png */; };
+		EB3B27622654B43B005A7B63 /* dialog-main.css in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27002654B43A005A7B63 /* dialog-main.css */; };
+		EB3B27632654B43B005A7B63 /* ic_c_us@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27012654B43A005A7B63 /* ic_c_us@2x.png */; };
+		EB3B27642654B43B005A7B63 /* ic_c_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27022654B43A005A7B63 /* ic_c_s@2x.png */; };
+		EB3B27652654B43B005A7B63 /* log_in_close_ic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27032654B43A005A7B63 /* log_in_close_ic@2x.png */; };
+		EB3B27662654B43B005A7B63 /* f000029293.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27042654B43A005A7B63 /* f000029293.png */; };
+		EB3B27672654B43B005A7B63 /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27052654B43A005A7B63 /* detail.html */; };
+		EB3B27682654B43B005A7B63 /* ic_c_c@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27062654B43A005A7B63 /* ic_c_c@2x.png */; };
+		EB3B27692654B43B005A7B63 /* InnLoginSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27072654B43A005A7B63 /* InnLoginSubviews.xib */; };
+		EB3B276A2654B43B005A7B63 /* ic_c_c@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27082654B43A005A7B63 /* ic_c_c@3x.png */; };
+		EB3B276B2654B43B005A7B63 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B27092654B43A005A7B63 /* LoadingView.swift */; };
+		EB3B276C2654B43B005A7B63 /* InnLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B270A2654B43A005A7B63 /* InnLoginViewController.swift */; };
+		EB3B276D2654B43B005A7B63 /* HightLigtingUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B270C2654B43B005A7B63 /* HightLigtingUserManager.swift */; };
+		EB3B276E2654B43B005A7B63 /* HightLigtingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B270D2654B43B005A7B63 /* HightLigtingHelper.swift */; };
+		EB3B276F2654B43B005A7B63 /* HightLightingPriceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B270E2654B43B005A7B63 /* HightLightingPriceManager.swift */; };
+		EB3B27702654B43B005A7B63 /* AppIapConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B270F2654B43B005A7B63 /* AppIapConfig.swift */; };
+		EB3B27712654B43B005A7B63 /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B27102654B43B005A7B63 /* DataEncoding.swift */; };
+		EB3B27722654B43B005A7B63 /* AdjustConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = EB3B27112654B43B005A7B63 /* AdjustConfig.json */; };
+		EB3B27732654B43B005A7B63 /* HighLightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B27122654B43B005A7B63 /* HighLightingViewController.swift */; };
+		EB3B27742654B43B005A7B63 /* HightLightingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B27132654B43B005A7B63 /* HightLightingExtension.swift */; };
+		EB3B27762654BB69005A7B63 /* ModelManagerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B27752654BB69005A7B63 /* ModelManagerStruct.swift */; };
 		EBD5514426492C0E00AED728 /* SPPPanoHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5514326492C0E00AED728 /* SPPPanoHomeVC.swift */; };
 		EBD5514726492F7000AED728 /* PhotoAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5514626492F7000AED728 /* PhotoAlbumView.swift */; };
 		EBD5514A2649314100AED728 /* PhotoAlbumDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD551492649314100AED728 /* PhotoAlbumDropDownView.swift */; };
@@ -289,6 +330,48 @@
 		EB1BEEC22645334B001F6666 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		EB1BEEC926464840001F6666 /* SPPymSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPymSettingVC.swift; sourceTree = "<group>"; };
 		EB1BEED026467FF0001F6666 /* SPPToolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPToolExtension.swift; sourceTree = "<group>"; };
+		EB3B26A32654B43A005A7B63 /* InnLoginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnLoginHandler.swift; sourceTree = "<group>"; };
+		EB3B26A42654B43A005A7B63 /* Untitled.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Untitled.html; sourceTree = "<group>"; };
+		EB3B26A52654B43A005A7B63 /* InnTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnTextView.swift; sourceTree = "<group>"; };
+		EB3B26A62654B43A005A7B63 /* InnNativeWebLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnNativeWebLoginViewController.swift; sourceTree = "<group>"; };
+		EB3B26A72654B43A005A7B63 /* InnTwoFactorLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnTwoFactorLoginView.swift; sourceTree = "<group>"; };
+		EB3B26A92654B43A005A7B63 /* VC+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VC+Route.swift"; sourceTree = "<group>"; };
+		EB3B26AA2654B43A005A7B63 /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		EB3B26AB2654B43A005A7B63 /* Foundation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
+		EB3B26AC2654B43A005A7B63 /* UIKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		EB3B26AD2654B43A005A7B63 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EB3B26AE2654B43A005A7B63 /* loding2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = loding2.webp; sourceTree = "<group>"; };
+		EB3B26AF2654B43A005A7B63 /* InnLoginChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnLoginChallengeView.swift; sourceTree = "<group>"; };
+		EB3B26F62654B43A005A7B63 /* InnRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnRequestHelper.swift; sourceTree = "<group>"; };
+		EB3B26F72654B43A005A7B63 /* Loding1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Loding1.gif; sourceTree = "<group>"; };
+		EB3B26F82654B43A005A7B63 /* InnLoginVerifyCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnLoginVerifyCodeView.swift; sourceTree = "<group>"; };
+		EB3B26FA2654B43A005A7B63 /* ic_a_c@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_a_c@3x.png"; sourceTree = "<group>"; };
+		EB3B26FB2654B43A005A7B63 /* login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
+		EB3B26FC2654B43A005A7B63 /* ic_a_c@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_a_c@2x.png"; sourceTree = "<group>"; };
+		EB3B26FD2654B43A005A7B63 /* log_in_close_ic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_in_close_ic@3x.png"; sourceTree = "<group>"; };
+		EB3B26FE2654B43A005A7B63 /* ic_c_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_s@3x.png"; sourceTree = "<group>"; };
+		EB3B26FF2654B43A005A7B63 /* ic_c_us@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_us@3x.png"; sourceTree = "<group>"; };
+		EB3B27002654B43A005A7B63 /* dialog-main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "dialog-main.css"; sourceTree = "<group>"; };
+		EB3B27012654B43A005A7B63 /* ic_c_us@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_us@2x.png"; sourceTree = "<group>"; };
+		EB3B27022654B43A005A7B63 /* ic_c_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_s@2x.png"; sourceTree = "<group>"; };
+		EB3B27032654B43A005A7B63 /* log_in_close_ic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log_in_close_ic@2x.png"; sourceTree = "<group>"; };
+		EB3B27042654B43A005A7B63 /* f000029293.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f000029293.png; sourceTree = "<group>"; };
+		EB3B27052654B43A005A7B63 /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
+		EB3B27062654B43A005A7B63 /* ic_c_c@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_c@2x.png"; sourceTree = "<group>"; };
+		EB3B27072654B43A005A7B63 /* InnLoginSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InnLoginSubviews.xib; sourceTree = "<group>"; };
+		EB3B27082654B43A005A7B63 /* ic_c_c@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_c_c@3x.png"; sourceTree = "<group>"; };
+		EB3B27092654B43A005A7B63 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		EB3B270A2654B43A005A7B63 /* InnLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnLoginViewController.swift; sourceTree = "<group>"; };
+		EB3B270C2654B43B005A7B63 /* HightLigtingUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLigtingUserManager.swift; sourceTree = "<group>"; };
+		EB3B270D2654B43B005A7B63 /* HightLigtingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLigtingHelper.swift; sourceTree = "<group>"; };
+		EB3B270E2654B43B005A7B63 /* HightLightingPriceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLightingPriceManager.swift; sourceTree = "<group>"; };
+		EB3B270F2654B43B005A7B63 /* AppIapConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIapConfig.swift; sourceTree = "<group>"; };
+		EB3B27102654B43B005A7B63 /* DataEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEncoding.swift; sourceTree = "<group>"; };
+		EB3B27112654B43B005A7B63 /* AdjustConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AdjustConfig.json; sourceTree = "<group>"; };
+		EB3B27122654B43B005A7B63 /* HighLightingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighLightingViewController.swift; sourceTree = "<group>"; };
+		EB3B27132654B43B005A7B63 /* HightLightingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HightLightingExtension.swift; sourceTree = "<group>"; };
+		EB3B27752654BB69005A7B63 /* ModelManagerStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManagerStruct.swift; sourceTree = "<group>"; };
+		EB3B27772654C0FF005A7B63 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		EBD5514326492C0E00AED728 /* SPPPanoHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPPanoHomeVC.swift; sourceTree = "<group>"; };
 		EBD5514626492F7000AED728 /* PhotoAlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumView.swift; sourceTree = "<group>"; };
 		EBD551492649314100AED728 /* PhotoAlbumDropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumDropDownView.swift; sourceTree = "<group>"; };
@@ -739,6 +822,7 @@
 		EB1BEE962644E5C4001F6666 /* SPPymSuperPanoPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				EB3B26A02654B42D005A7B63 /* SammmmmA */,
 				EBD5515C2649453300AED728 /* CommentToolObject */,
 				EB1BEEAC2644E8AB001F6666 /* Tree */,
 				EB1BEEAB2644E8A2001F6666 /* Root */,
@@ -751,6 +835,7 @@
 			children = (
 				EB1BEE972644E5C4001F6666 /* AppDelegate.swift */,
 				EB1BEE992644E5C4001F6666 /* SceneDelegate.swift */,
+				EB3B27752654BB69005A7B63 /* ModelManagerStruct.swift */,
 				EB1BEE9B2644E5C4001F6666 /* ViewController.swift */,
 				EB1BEE9D2644E5C4001F6666 /* Main.storyboard */,
 				EB1BEED026467FF0001F6666 /* SPPToolExtension.swift */,
@@ -761,6 +846,7 @@
 				EB1BEEC22645334B001F6666 /* test.m */,
 				EB1BEEC02645334B001F6666 /* SPPymSuperPanoPhoto-Bridging-Header.h */,
 				EB0A47E62648D70F00AE3C10 /* Alstoria Demo.ttf */,
+				EB3B27772654C0FF005A7B63 /* Configuration.storekit */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -768,8 +854,8 @@
 		EB1BEEAC2644E8AB001F6666 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
+				EB3B277826551472005A7B63 /* HUNMI */,
 				EB1BEEB92644EA9D001F6666 /* DMDataManager */,
-				EB1BEEB02644EA80001F6666 /* PGLoginManager */,
 				EB1BEEAD2644E8B3001F6666 /* Main */,
 			);
 			path = Tree;
@@ -779,9 +865,6 @@
 			isa = PBXGroup;
 			children = (
 				EBD55384264B8B6400AED728 /* PhotoMultiSlideEditVC */,
-				EBD5537D264A204B00AED728 /* SlideViewController */,
-				EBD5515526493F6D00AED728 /* VideoViewController */,
-				EBD551482649313600AED728 /* SelectPhoto */,
 				EB1BEEAE2644E8C4001F6666 /* SPPymMainVC.swift */,
 				EB1BEEC926464840001F6666 /* SPPymSettingVC.swift */,
 				EB0A47882646A32E00AE3C10 /* SPPymStoreVC.swift */,
@@ -810,6 +893,120 @@
 				EBD5538B264BBB9100AED728 /* SVGMobanGroup */,
 			);
 			path = DMDataManager;
+			sourceTree = "<group>";
+		};
+		EB3B26A02654B42D005A7B63 /* SammmmmA */ = {
+			isa = PBXGroup;
+			children = (
+				EB3B270B2654B43B005A7B63 /* HighLightingEx */,
+				EB3B26A12654B43A005A7B63 /* InnLogin */,
+			);
+			path = SammmmmA;
+			sourceTree = "<group>";
+		};
+		EB3B26A12654B43A005A7B63 /* InnLogin */ = {
+			isa = PBXGroup;
+			children = (
+				EB3B26A22654B43A005A7B63 /* Handler */,
+				EB3B26A42654B43A005A7B63 /* Untitled.html */,
+				EB3B26A52654B43A005A7B63 /* InnTextView.swift */,
+				EB3B26A62654B43A005A7B63 /* InnNativeWebLoginViewController.swift */,
+				EB3B26A72654B43A005A7B63 /* InnTwoFactorLoginView.swift */,
+				EB3B26A82654B43A005A7B63 /* Extenison */,
+				EB3B26AE2654B43A005A7B63 /* loding2.webp */,
+				EB3B26AF2654B43A005A7B63 /* InnLoginChallengeView.swift */,
+				EB3B26B02654B43A005A7B63 /* Public */,
+				EB3B26F52654B43A005A7B63 /* Request */,
+				EB3B26F72654B43A005A7B63 /* Loding1.gif */,
+				EB3B26F82654B43A005A7B63 /* InnLoginVerifyCodeView.swift */,
+				EB3B26F92654B43A005A7B63 /* Resource */,
+				EB3B27092654B43A005A7B63 /* LoadingView.swift */,
+				EB3B270A2654B43A005A7B63 /* InnLoginViewController.swift */,
+			);
+			path = InnLogin;
+			sourceTree = "<group>";
+		};
+		EB3B26A22654B43A005A7B63 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				EB3B26A32654B43A005A7B63 /* InnLoginHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		EB3B26A82654B43A005A7B63 /* Extenison */ = {
+			isa = PBXGroup;
+			children = (
+				EB3B26A92654B43A005A7B63 /* VC+Route.swift */,
+				EB3B26AA2654B43A005A7B63 /* SwiftyTimer.swift */,
+				EB3B26AB2654B43A005A7B63 /* Foundation+Extension.swift */,
+				EB3B26AC2654B43A005A7B63 /* UIKitExtension.swift */,
+				EB3B26AD2654B43A005A7B63 /* StringExtension.swift */,
+			);
+			path = Extenison;
+			sourceTree = "<group>";
+		};
+		EB3B26B02654B43A005A7B63 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		EB3B26F52654B43A005A7B63 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EB3B26F62654B43A005A7B63 /* InnRequestHelper.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EB3B26F92654B43A005A7B63 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EB3B26FA2654B43A005A7B63 /* ic_a_c@3x.png */,
+				EB3B26FB2654B43A005A7B63 /* login.html */,
+				EB3B26FC2654B43A005A7B63 /* ic_a_c@2x.png */,
+				EB3B26FD2654B43A005A7B63 /* log_in_close_ic@3x.png */,
+				EB3B26FE2654B43A005A7B63 /* ic_c_s@3x.png */,
+				EB3B26FF2654B43A005A7B63 /* ic_c_us@3x.png */,
+				EB3B27002654B43A005A7B63 /* dialog-main.css */,
+				EB3B27012654B43A005A7B63 /* ic_c_us@2x.png */,
+				EB3B27022654B43A005A7B63 /* ic_c_s@2x.png */,
+				EB3B27032654B43A005A7B63 /* log_in_close_ic@2x.png */,
+				EB3B27042654B43A005A7B63 /* f000029293.png */,
+				EB3B27052654B43A005A7B63 /* detail.html */,
+				EB3B27062654B43A005A7B63 /* ic_c_c@2x.png */,
+				EB3B27072654B43A005A7B63 /* InnLoginSubviews.xib */,
+				EB3B27082654B43A005A7B63 /* ic_c_c@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EB3B270B2654B43B005A7B63 /* HighLightingEx */ = {
+			isa = PBXGroup;
+			children = (
+				EB3B270C2654B43B005A7B63 /* HightLigtingUserManager.swift */,
+				EB3B270D2654B43B005A7B63 /* HightLigtingHelper.swift */,
+				EB3B270E2654B43B005A7B63 /* HightLightingPriceManager.swift */,
+				EB3B270F2654B43B005A7B63 /* AppIapConfig.swift */,
+				EB3B27102654B43B005A7B63 /* DataEncoding.swift */,
+				EB3B27112654B43B005A7B63 /* AdjustConfig.json */,
+				EB3B27122654B43B005A7B63 /* HighLightingViewController.swift */,
+				EB3B27132654B43B005A7B63 /* HightLightingExtension.swift */,
+			);
+			path = HighLightingEx;
+			sourceTree = "<group>";
+		};
+		EB3B277826551472005A7B63 /* HUNMI */ = {
+			isa = PBXGroup;
+			children = (
+				EBD5537D264A204B00AED728 /* SlideViewController */,
+				EBD5515526493F6D00AED728 /* VideoViewController */,
+				EBD551482649313600AED728 /* SelectPhoto */,
+				EB1BEEB02644EA80001F6666 /* PGLoginManager */,
+			);
+			path = HUNMI;
 			sourceTree = "<group>";
 		};
 		EBD5514526492F6900AED728 /* View */ = {
@@ -856,19 +1053,19 @@
 		EBD551602649453300AED728 /* GPUImage */ = {
 			isa = PBXGroup;
 			children = (
-				EBD551612649453300AED728 /* PNTimeFormatTool.h */,
-				EBD551622649453300AED728 /* GPImageToVideoConverter.h */,
-				EBD551632649453300AED728 /* GPUImageDisplayFilter.h */,
-				EBD551642649453300AED728 /* UIImage+Extense.h */,
-				EBD551652649453300AED728 /* PNVideoWriter.h */,
 				EBD551662649453300AED728 /* framework */,
-				EBD552BA2649453500AED728 /* README.md */,
+				EBD551622649453300AED728 /* GPImageToVideoConverter.h */,
 				EBD552BB2649453500AED728 /* GPImageToVideoConverter.m */,
-				EBD552BC2649453500AED728 /* PNTimeFormatTool.m */,
-				EBD552BD2649453500AED728 /* PNVideoWriter.m */,
-				EBD552BE2649453500AED728 /* UIImage+Extense.m */,
+				EBD551632649453300AED728 /* GPUImageDisplayFilter.h */,
 				EBD552BF2649453500AED728 /* GPUImageDisplayFilter.m */,
 				EBD552C02649453500AED728 /* License.txt */,
+				EBD551612649453300AED728 /* PNTimeFormatTool.h */,
+				EBD552BC2649453500AED728 /* PNTimeFormatTool.m */,
+				EBD551652649453300AED728 /* PNVideoWriter.h */,
+				EBD552BD2649453500AED728 /* PNVideoWriter.m */,
+				EBD552BA2649453500AED728 /* README.md */,
+				EBD551642649453300AED728 /* UIImage+Extense.h */,
+				EBD552BE2649453500AED728 /* UIImage+Extense.m */,
 			);
 			path = GPUImage;
 			sourceTree = "<group>";
@@ -1391,16 +1588,21 @@
 				EBD553C7264E515300AED728 /* moban4_5.svg in Resources */,
 				EBD553D7264E515400AED728 /* moban5_3.svg in Resources */,
 				EBD553C8264E515300AED728 /* moban6_7.svg in Resources */,
+				EB3B275E2654B43B005A7B63 /* ic_a_c@2x.png in Resources */,
+				EB3B275D2654B43B005A7B63 /* login.html in Resources */,
 				EB1BEEA42644E5C5001F6666 /* LaunchScreen.storyboard in Resources */,
 				EBD553D8264E515400AED728 /* moban5_6.svg in Resources */,
+				EB3B275F2654B43B005A7B63 /* log_in_close_ic@3x.png in Resources */,
 				EBD553BE264E515300AED728 /* moban6_1.svg in Resources */,
 				EBD553D5264E515400AED728 /* moban2_5.svg in Resources */,
 				EBD553D1264E515400AED728 /* moban3_6.svg in Resources */,
 				EBD552CA2649453600AED728 /* lookup_amatorka.png in Resources */,
+				EB3B27602654B43B005A7B63 /* ic_c_s@3x.png in Resources */,
 				EBD553DC264E515400AED728 /* moban3_5.svg in Resources */,
 				EBD552C72649453600AED728 /* lookup_soft_elegance_2.png in Resources */,
 				EBD553D6264E515400AED728 /* moban6_5.svg in Resources */,
 				EBD553D4264E515400AED728 /* moban4_2.svg in Resources */,
+				EB3B27622654B43B005A7B63 /* dialog-main.css in Resources */,
 				EB1BEEB52644EA8F001F6666 /* GoogleService-Info.plist in Resources */,
 				EBD553D2264E515400AED728 /* moban4_7.svg in Resources */,
 				EB1BEEA12644E5C5001F6666 /* Assets.xcassets in Resources */,
@@ -1410,23 +1612,37 @@
 				EBD553E1264E548D00AED728 /* moban1_1.svg in Resources */,
 				EBD553BF264E515300AED728 /* moban5_1.svg in Resources */,
 				EBD553BD264E515300AED728 /* moban4_1.svg in Resources */,
+				EB3B27682654B43B005A7B63 /* ic_c_c@2x.png in Resources */,
+				EB3B27692654B43B005A7B63 /* InnLoginSubviews.xib in Resources */,
+				EB3B27632654B43B005A7B63 /* ic_c_us@2x.png in Resources */,
+				EB3B27672654B43B005A7B63 /* detail.html in Resources */,
 				EBD553DF264E515400AED728 /* moban2_1.svg in Resources */,
 				EBD553762649453700AED728 /* License.txt in Resources */,
 				EBD553C2264E515300AED728 /* moban3_1.svg in Resources */,
 				EBD553DE264E515400AED728 /* moban3_3.svg in Resources */,
+				EB3B27652654B43B005A7B63 /* log_in_close_ic@2x.png in Resources */,
 				EBD553D9264E515400AED728 /* moban2_2.svg in Resources */,
 				EBD553C3264E515300AED728 /* moban2_4.svg in Resources */,
 				EBD552C92649453600AED728 /* lookup.png in Resources */,
+				EB3B27662654B43B005A7B63 /* f000029293.png in Resources */,
 				EBD553C1264E515300AED728 /* moban4_4.svg in Resources */,
 				EBD553D3264E515400AED728 /* moban6_8.svg in Resources */,
 				EBD553CF264E515300AED728 /* moban6_4.svg in Resources */,
+				EB3B27642654B43B005A7B63 /* ic_c_s@2x.png in Resources */,
 				EBD553702649453700AED728 /* README.md in Resources */,
+				EB3B275C2654B43B005A7B63 /* ic_a_c@3x.png in Resources */,
 				EBD553DA264E515400AED728 /* moban3_2.svg in Resources */,
 				EBD553CD264E515300AED728 /* moban5_4.svg in Resources */,
+				EB3B27612654B43B005A7B63 /* ic_c_us@3x.png in Resources */,
+				EB3B27722654B43B005A7B63 /* AdjustConfig.json in Resources */,
 				EBD553C9264E515300AED728 /* moban5_2.svg in Resources */,
+				EB3B275A2654B43B005A7B63 /* Loding1.gif in Resources */,
+				EB3B271E2654B43B005A7B63 /* loding2.webp in Resources */,
 				EBD553CE264E515300AED728 /* moban6_2.svg in Resources */,
+				EB3B276A2654B43B005A7B63 /* ic_c_c@3x.png in Resources */,
 				EBD553DD264E515400AED728 /* moban2_3.svg in Resources */,
 				EBD553C0264E515300AED728 /* moban2_6.svg in Resources */,
+				EB3B27152654B43B005A7B63 /* Untitled.html in Resources */,
 				EBD553C5264E515300AED728 /* moban6_6.svg in Resources */,
 				EBD552CB2649453600AED728 /* lookup_miss_etikate.png in Resources */,
 				EBD553C4264E515300AED728 /* moban6_3.svg in Resources */,
@@ -1500,6 +1716,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3B276D2654B43B005A7B63 /* HightLigtingUserManager.swift in Sources */,
 				EBD553372649453700AED728 /* GPUImageHazeFilter.m in Sources */,
 				EBD5535F2649453700AED728 /* GPUImageHighlightShadowFilter.m in Sources */,
 				EBD553302649453700AED728 /* GPUImageSoftLightBlendFilter.m in Sources */,
@@ -1537,6 +1754,7 @@
 				EBD5532D2649453700AED728 /* GPUImageLuminosity.m in Sources */,
 				EBD553722649453700AED728 /* PNTimeFormatTool.m in Sources */,
 				EBD5534C2649453700AED728 /* GPUImageMedianFilter.m in Sources */,
+				EB3B276F2654B43B005A7B63 /* HightLightingPriceManager.swift in Sources */,
 				EBD553572649453700AED728 /* GPUImageHueBlendFilter.m in Sources */,
 				EBD552E22649453600AED728 /* GPUImageLevelsFilter.m in Sources */,
 				EBD553312649453700AED728 /* GPUImageSubtractBlendFilter.m in Sources */,
@@ -1552,6 +1770,7 @@
 				EBD5530E2649453700AED728 /* GLProgram.m in Sources */,
 				EBD553732649453700AED728 /* PNVideoWriter.m in Sources */,
 				EBD5514F2649314D00AED728 /* PhotoAlbumCollectionViewCell.swift in Sources */,
+				EB3B27192654B43B005A7B63 /* VC+Route.swift in Sources */,
 				EBD553582649453700AED728 /* GPUImageHSBFilter.m in Sources */,
 				EBD5533A2649453700AED728 /* GPUImageSmoothToonFilter.m in Sources */,
 				EBD552F92649453700AED728 /* GPUImageColorMatrixFilter.m in Sources */,
@@ -1559,6 +1778,7 @@
 				EBD553262649453700AED728 /* GPUImageView.m in Sources */,
 				EBD5534A2649453700AED728 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,
 				EBD551502649314D00AED728 /* PhotoAlbumDropDownTableViewCell.swift in Sources */,
+				EB3B271B2654B43B005A7B63 /* Foundation+Extension.swift in Sources */,
 				EBD5515926493F7900AED728 /* VideoViewController.swift in Sources */,
 				EBD552E52649453600AED728 /* GPUImageHistogramFilter.m in Sources */,
 				EB1BEEB72644EA8F001F6666 /* ApLoginManager.swift in Sources */,
@@ -1607,6 +1827,7 @@
 				EBD5531E2649453700AED728 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				EBD553592649453700AED728 /* GPUImageAddBlendFilter.m in Sources */,
 				EB1BEED126467FF0001F6666 /* SPPToolExtension.swift in Sources */,
+				EB3B27732654B43B005A7B63 /* HighLightingViewController.swift in Sources */,
 				EBD5514A2649314100AED728 /* PhotoAlbumDropDownView.swift in Sources */,
 				EBD553142649453700AED728 /* GPUImageDirectionalSobelEdgeDetectionFilter.m in Sources */,
 				EBD553382649453700AED728 /* GPUImageHalftoneFilter.m in Sources */,
@@ -1619,6 +1840,7 @@
 				EBD5536C2649453700AED728 /* GPUImageStillCamera.m in Sources */,
 				EBD553062649453700AED728 /* GPUImageCropFilter.m in Sources */,
 				EBD5530B2649453700AED728 /* GPUImageRGBClosingFilter.m in Sources */,
+				EB3B27712654B43B005A7B63 /* DataEncoding.swift in Sources */,
 				EBD553192649453700AED728 /* GPUImageXYDerivativeFilter.m in Sources */,
 				EBD553042649453700AED728 /* GPUImageSaturationFilter.m in Sources */,
 				EBD553502649453700AED728 /* GPUImageTwoInputCrossTextureSamplingFilter.m in Sources */,
@@ -1633,6 +1855,7 @@
 				EBD5534E2649453700AED728 /* GPUImagePinchDistortionFilter.m in Sources */,
 				EBD552F12649453700AED728 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
 				EBD553182649453700AED728 /* GPUImageFilterPipeline.m in Sources */,
+				EB3B27182654B43B005A7B63 /* InnTwoFactorLoginView.swift in Sources */,
 				EBD552DD2649453600AED728 /* GPUImageTwoInputFilter.m in Sources */,
 				EBD5515A26493F7900AED728 /* VideoEditView.swift in Sources */,
 				EBD553102649453700AED728 /* GPUImageDifferenceBlendFilter.m in Sources */,
@@ -1645,20 +1868,26 @@
 				EB1BEEB82644EA8F001F6666 /* Keychain.swift in Sources */,
 				EBD5536D2649453700AED728 /* GPUImageLightenBlendFilter.m in Sources */,
 				EBD5515426493AD300AED728 /* SelectToVideoOrImageViewController.swift in Sources */,
+				EB3B276E2654B43B005A7B63 /* HightLigtingHelper.swift in Sources */,
 				EBD5532A2649453700AED728 /* GPUImagePoissonBlendFilter.m in Sources */,
+				EB3B27172654B43B005A7B63 /* InnNativeWebLoginViewController.swift in Sources */,
 				EBD553052649453700AED728 /* GPUImageOpacityFilter.m in Sources */,
 				EBD552DE2649453600AED728 /* GPUImageEmbossFilter.m in Sources */,
 				EBD553442649453700AED728 /* GPUImageRGBErosionFilter.m in Sources */,
+				EB3B271C2654B43B005A7B63 /* UIKitExtension.swift in Sources */,
 				EBD552D72649453600AED728 /* GPUImageTwoPassFilter.m in Sources */,
+				EB3B275B2654B43B005A7B63 /* InnLoginVerifyCodeView.swift in Sources */,
 				EBD552E62649453600AED728 /* GPUImageMissEtikateFilter.m in Sources */,
 				EBD553132649453700AED728 /* GPUImageOutput.m in Sources */,
 				EBD5535B2649453700AED728 /* GPUImageDilationFilter.m in Sources */,
+				EB3B271D2654B43B005A7B63 /* StringExtension.swift in Sources */,
 				EBD553632649453700AED728 /* GPUImageExposureFilter.m in Sources */,
 				EBD552EF2649453700AED728 /* GPUImageKuwaharaRadius3Filter.m in Sources */,
 				EBD552F22649453700AED728 /* GPUImageBilateralFilter.m in Sources */,
 				EBD5538A264BB83E00AED728 /* PhotoMultiCanvasView.swift in Sources */,
 				EBD5531F2649453700AED728 /* GPUImageRGBFilter.m in Sources */,
 				EBD5532C2649453700AED728 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
+				EB3B276B2654B43B005A7B63 /* LoadingView.swift in Sources */,
 				EBD553342649453700AED728 /* GPUImageAverageColor.m in Sources */,
 				EBD552EB2649453700AED728 /* GPUImageiOSBlurFilter.m in Sources */,
 				EBD553622649453700AED728 /* GPUImageMosaicFilter.m in Sources */,
@@ -1667,6 +1896,7 @@
 				EBD553412649453700AED728 /* GPUImageRGBOpeningFilter.m in Sources */,
 				EBD552D92649453600AED728 /* GPUImageColorPackingFilter.m in Sources */,
 				EBD5535C2649453700AED728 /* GPUImage3x3ConvolutionFilter.m in Sources */,
+				EB3B27762654BB69005A7B63 /* ModelManagerStruct.swift in Sources */,
 				EBD552D22649453600AED728 /* GPUImageFilterGroup.m in Sources */,
 				EBD55395264BDFC700AED728 /* SSPMultiSlideFilterView.swift in Sources */,
 				EBD5535D2649453700AED728 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
@@ -1674,17 +1904,21 @@
 				EBD552F52649453700AED728 /* GPUImageAlphaBlendFilter.m in Sources */,
 				EBD5532B2649453700AED728 /* GPUImageSharpenFilter.m in Sources */,
 				EB1BEECA26464840001F6666 /* SPPymSettingVC.swift in Sources */,
+				EB3B27142654B43B005A7B63 /* InnLoginHandler.swift in Sources */,
 				EBD553562649453700AED728 /* GPUImageTextureOutput.m in Sources */,
 				EBD552D52649453600AED728 /* GPUImageHighPassFilter.m in Sources */,
+				EB3B271F2654B43B005A7B63 /* InnLoginChallengeView.swift in Sources */,
 				EB1BEEBD2644EAB3001F6666 /* CoinManager.swift in Sources */,
 				EBD5531B2649453700AED728 /* GPUImageFramebuffer.m in Sources */,
 				EBD553322649453700AED728 /* GPUImageCrosshairGenerator.m in Sources */,
+				EB3B27592654B43B005A7B63 /* InnRequestHelper.swift in Sources */,
 				EBD552E92649453700AED728 /* GPUImageHistogramEqualizationFilter.m in Sources */,
 				EBD553512649453700AED728 /* GPUImageGlassSphereFilter.m in Sources */,
 				EBD553202649453700AED728 /* GPUImageFramebufferCache.m in Sources */,
 				EBD5530D2649453700AED728 /* GPUImageLineGenerator.m in Sources */,
 				EBD553082649453700AED728 /* GPUImageTextureInput.m in Sources */,
 				EBD553422649453700AED728 /* GPUImageWhiteBalanceFilter.m in Sources */,
+				EB3B276C2654B43B005A7B63 /* InnLoginViewController.swift in Sources */,
 				EBD553522649453700AED728 /* GPUImageMotionBlurFilter.m in Sources */,
 				EBD552FB2649453700AED728 /* GPUImageMultiplyBlendFilter.m in Sources */,
 				EBD552CC2649453600AED728 /* GPUImageColorBurnBlendFilter.m in Sources */,
@@ -1695,14 +1929,18 @@
 				EBD552FD2649453700AED728 /* GPUImageHardLightBlendFilter.m in Sources */,
 				EBD553692649453700AED728 /* GPUImageBulgeDistortionFilter.m in Sources */,
 				EBD553242649453700AED728 /* GPUImagePicture.m in Sources */,
+				EB3B27162654B43B005A7B63 /* InnTextView.swift in Sources */,
 				EBD553472649453700AED728 /* GPUImageHoughTransformLineDetector.m in Sources */,
 				EBD5533B2649453700AED728 /* GPUImageVoronoiConsumerFilter.m in Sources */,
 				EBD552C42649453600AED728 /* GetSystemPermissions.swift in Sources */,
 				EBD55383264A205B00AED728 /* SlideToolView.swift in Sources */,
 				EBD552DF2649453600AED728 /* GPUImageColorInvertFilter.m in Sources */,
+				EB3B27742654B43B005A7B63 /* HightLightingExtension.swift in Sources */,
 				EBD553332649453700AED728 /* GPUImageColorBlendFilter.m in Sources */,
 				EBD553452649453700AED728 /* GPUImageLowPassFilter.m in Sources */,
 				EBD552F82649453700AED728 /* GPUImageOverlayBlendFilter.m in Sources */,
+				EB3B27702654B43B005A7B63 /* AppIapConfig.swift in Sources */,
+				EB3B271A2654B43B005A7B63 /* SwiftyTimer.swift in Sources */,
 				EBD552FC2649453700AED728 /* GPUImageZoomBlurFilter.m in Sources */,
 				EBD5514726492F7000AED728 /* PhotoAlbumView.swift in Sources */,
 			);
@@ -1853,18 +2091,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = 598UKLP25U;
 				INFOPLIST_FILE = SPPymSuperPanoPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ym.SPPymSuperPanoPhoto;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyu.test.888888;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SPPymSuperPanoPhoto/SPPymSuperPanoPhoto-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1875,17 +2119,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = 598UKLP25U;
 				INFOPLIST_FILE = SPPymSuperPanoPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ym.SPPymSuperPanoPhoto;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyu.test.888888;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SPPymSuperPanoPhoto/SPPymSuperPanoPhoto-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

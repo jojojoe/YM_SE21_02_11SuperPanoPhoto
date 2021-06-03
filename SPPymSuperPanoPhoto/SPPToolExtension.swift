@@ -29,14 +29,14 @@ public extension UIApplication {
 }
 
 extension UIApplication {
-    public static var rootController: UIViewController? {
-        if #available(iOS 13.0, *) {
-            return shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
-        } else {
-            return shared.keyWindow?.rootViewController
-        }
-
-    }
+//    public static var rootController: UIViewController? {
+//        if #available(iOS 13.0, *) {
+//            return shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
+//        } else {
+//            return shared.keyWindow?.rootViewController
+//        }
+//
+//    }
 }
 
 public struct HUD {
@@ -70,101 +70,101 @@ public struct HUD {
     }
 }
 
-public struct Alert {
-    public static func error(_ value: String?, title: String? = "Error", success: (() -> Void)? = nil) {
-        
-        HUD.hide()
-        Alertift
-            .alert(title: title, message: value)
-            .action(.cancel("OK"), handler: { _, _, _ in
-                success?()
-            })
-            .show(on: UIApplication.rootController?.visibleVC, completion: nil)
-    }
+//public struct Alert {
+//    public static func error(_ value: String?, title: String? = "Error", success: (() -> Void)? = nil) {
+//
+//        HUD.hide()
+//        Alertift
+//            .alert(title: title, message: value)
+//            .action(.cancel("OK"), handler: { _, _, _ in
+//                success?()
+//            })
+//            .show(on: UIApplication.rootController?.visibleVC, completion: nil)
+//    }
+//
+//    public static func message(_ value: String?, success: (() -> Void)? = nil) {
+//
+//        HUD.hide()
+//        Alertift
+//            .alert(message: value)
+//            .action(.cancel("OK"), handler: { _, _, _ in
+//                success?()
+//            })
+//            .show(on: UIApplication.rootController?.visibleVC, completion: nil)
+//    }
+//}
 
-    public static func message(_ value: String?, success: (() -> Void)? = nil) {
-        
-        HUD.hide()
-        Alertift
-            .alert(message: value)
-            .action(.cancel("OK"), handler: { _, _, _ in
-                success?()
-            })
-            .show(on: UIApplication.rootController?.visibleVC, completion: nil)
-    }
-}
-
-public extension UIViewController {
-    var rootVC: UIViewController? {
-        return UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
-    }
-
-    var visibleVC: UIViewController? {
-        return topMost(of: rootVC)
-    }
-
-    var visibleTabBarController: UITabBarController? {
-        return topMost(of: rootVC)?.tabBarController
-    }
-
-    var visibleNavigationController: UINavigationController? {
-        return topMost(of: rootVC)?.navigationController
-    }
-
-    private func topMost(of viewController: UIViewController?) -> UIViewController? {
-        if let presentedViewController = viewController?.presentedViewController {
-            return topMost(of: presentedViewController)
-        }
-
-        // UITabBarController
-        if let tabBarController = viewController as? UITabBarController,
-            let selectedViewController = tabBarController.selectedViewController {
-            return topMost(of: selectedViewController)
-        }
-
-        // UINavigationController
-        if let navigationController = viewController as? UINavigationController,
-            let visibleViewController = navigationController.visibleViewController {
-            return topMost(of: visibleViewController)
-        }
-
-        return viewController
-    }
-
-    func present(_ controller: UIViewController) {
-        self.modalPresentationStyle = .fullScreen
-        
-        present(controller, animated: true, completion: nil)
-    }
-    
-    func pushVC(_ controller: UIViewController ,animate: Bool) {
-        if let navigationController = self.navigationController {
-            navigationController.pushViewController(controller, animated: animate)
-        } else {
-            present(controller, animated: animate, completion: nil)
-        }
-    }
-    
-    func popVC() {
-        if let navigationController = self.navigationController {
-            navigationController.popViewController()
-        } else {
-            self.dismiss(animated: true, completion: nil)
-        }
-    }
-    
-    func presentDissolve(_ controller: UIViewController, completion: (() -> Void)? = nil) {
-        controller.modalPresentationStyle = .overFullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: completion)
-    }
-    
-    func presentFullScreen(_ controller: UIViewController, completion: (() -> Void)? = nil) {
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: completion)
-    }
-}
+//public extension UIViewController {
+//    var rootVC: UIViewController? {
+//        return UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
+//    }
+//
+//    var visibleVC: UIViewController? {
+//        return topMost(of: rootVC)
+//    }
+//
+//    var visibleTabBarController: UITabBarController? {
+//        return topMost(of: rootVC)?.tabBarController
+//    }
+//
+//    var visibleNavigationController: UINavigationController? {
+//        return topMost(of: rootVC)?.navigationController
+//    }
+//
+//    private func topMost(of viewController: UIViewController?) -> UIViewController? {
+//        if let presentedViewController = viewController?.presentedViewController {
+//            return topMost(of: presentedViewController)
+//        }
+//
+//        // UITabBarController
+//        if let tabBarController = viewController as? UITabBarController,
+//            let selectedViewController = tabBarController.selectedViewController {
+//            return topMost(of: selectedViewController)
+//        }
+//
+//        // UINavigationController
+//        if let navigationController = viewController as? UINavigationController,
+//            let visibleViewController = navigationController.visibleViewController {
+//            return topMost(of: visibleViewController)
+//        }
+//
+//        return viewController
+//    }
+//
+//    func present(_ controller: UIViewController) {
+//        self.modalPresentationStyle = .fullScreen
+//
+//        present(controller, animated: true, completion: nil)
+//    }
+//
+//    func pushVC(_ controller: UIViewController ,animate: Bool) {
+//        if let navigationController = self.navigationController {
+//            navigationController.pushViewController(controller, animated: animate)
+//        } else {
+//            present(controller, animated: animate, completion: nil)
+//        }
+//    }
+//
+//    func popVC() {
+//        if let navigationController = self.navigationController {
+//            navigationController.popViewController()
+//        } else {
+//            self.dismiss(animated: true, completion: nil)
+//        }
+//    }
+//
+//    func presentDissolve(_ controller: UIViewController, completion: (() -> Void)? = nil) {
+//        controller.modalPresentationStyle = .overFullScreen
+//        controller.modalTransitionStyle = .crossDissolve
+//        present(controller, animated: true, completion: completion)
+//    }
+//
+//    func presentFullScreen(_ controller: UIViewController, completion: (() -> Void)? = nil) {
+//        controller.modalPresentationStyle = .fullScreen
+//        controller.modalTransitionStyle = .crossDissolve
+//        present(controller, animated: true, completion: completion)
+//    }
+//}
 
 
 @objc

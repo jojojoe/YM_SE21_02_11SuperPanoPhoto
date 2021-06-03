@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Authorization Request — Instagram</title>
+        <link rel="stylesheet" href="https://instagramstatic-a.akamaihd.net/bluebar/f7ca2cb/cache/styles/fonts.css">
+        <link href="dialog-main.css" type="text/css" rel="stylesheet">
+    </head>
+    <body class="p-dialog oauth-authorize">
+        <div class="root">
+        
+    <section class="dialog-outer">
+        <div class="dialog">
+            <header>
+                <h1 class="logo">Instagram</h1>
+            </header>
+            
+            <div class="dialog-main">
+                <p>Hi <b id="username"></b>
+                <b>
+                    <a id="appLink" href="" target="_blank"></a>
+                </b> is requesting to do the following:
+                </p>
+
+                <ul id="permissionList">
+                    
+                    <li>
+                        <strong>Access your basic information</strong>
+                        <span>Includes photos, friend lists &amp; profile info</span>
+                    </li>
+                </ul>
+            </div>
+
+            <form method="get" accept-charset="utf-8" class="form-actions" action="ios://onAuthorize">
+                <p><a id="notUser" href="ios://notUser"></a></p>
+
+                <ul class="actions">
+                    <li>
+                        <input type="submit" name="allow" value="Cancel" class="button destructive button-light">
+                    </li>
+                    <li>
+                        <input type="submit" name="allow" value="Authorize" class="button confirm button-green">
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <footer>
+            <p><small>You should only authorize third-party applications that you trust, and you should understand how and when they will use your data. You may revoke this app's access at any time by visiting your profile page and clicking "revoke" in the <a href="https://instagram.com/accounts/manage_access">access section</a>.</small></p>
+        </footer>
+    </section>
+        <div id="reactModalMountPoint"></div>
+    </div>
+        
+    <script>
+        
+    </script>
+    
+    <script type="text/javaScript">
+        function fillInfo(username, appname, applink){
+            document.getElementById("username").innerHTML=username + ",";
+            document.getElementById("notUser").innerHTML="Not " + username + "?";
+            document.getElementById("appLink").innerHTML=appname;
+            document.getElementById("appLink").href = applink;
+        }
+    
+        function clearPermissionList(){
+            var list = document.getElementById("permissionList");
+            if(list.getElementsByTagName("li").length != 0){
+                list.innerHTML="";
+            }
+        }
+    
+        function appendPermissionListChild(title, detail){
+            var list = document.getElementById("permissionList");
+            var v_li = document.createElement("li");
+            v_li.innerHTML="<strong>"+ title +"</strong><span>"+ detail +"</span>";
+            list.appendChild(v_li);
+        }
+    
+    </script>
+    
+</body></html>

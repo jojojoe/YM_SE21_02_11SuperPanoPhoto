@@ -12,6 +12,7 @@ import Firebase
 import AuthenticationServices
 import DeviceKit
 import SnapKit
+import AppTrackingTransparency
 
 class APLoginVC: FUIAuthPickerViewController, FUIAuthDelegate {
     
@@ -192,14 +193,14 @@ extension APLoginVC {
             $0.bottom.equalToSuperview().offset(padding)
         }
         //
-        let iconImgV = UIImageView(image: UIImage(named: "splash_img"))
+        let iconImgV = UIImageView(image: UIImage(named: "pano_log_in_logo"))
         iconImgV.contentMode = .scaleAspectFit
         contentBgView.addSubview(iconImgV)
         iconImgV.snp.makeConstraints {
-            $0.top.equalToSuperview()
-            $0.left.equalTo(22)
+            $0.centerY.equalToSuperview().offset(-80)
             $0.centerX.equalToSuperview()
-            $0.height.equalTo((UIScreen.main.bounds.size.width - 22 * 2) * (1018.0/736.0))
+            $0.height.equalTo(148/2)
+            $0.width.equalTo(212/2)
         }
         
 //        let layout = UICollectionViewFlowLayout()

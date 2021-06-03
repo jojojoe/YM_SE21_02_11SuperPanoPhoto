@@ -38,7 +38,23 @@ target 'SPPymSuperPanoPhoto' do
   pod 'FirebaseUI/OAuth'
   pod 'Firebase/Messaging'
   
-  
+  # cor
+  pod 'SwifterSwift'
+  pod 'AFNetworking'
+  pod 'SVProgressHUD'
+  pod 'Adjust'
+  pod 'Alamofire'
+  pod 'ZKProgressHUD'
+  pod 'Toast'
+  pod 'CryptoSwift'
+  pod 'DeviceKit'
+  pod 'SwiftyStoreKit'
+  pod 'Defaults'
+  pod 'Alertift'
+  pod 'SwiftyJSON'
+  pod 'RxRelay'
+  pod 'SnapKit'
+  pod 'RxCocoa'
   
   
 end

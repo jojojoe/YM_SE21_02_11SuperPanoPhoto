@@ -10,7 +10,7 @@ import UIKit
 
 typealias ButtonClickBlock = () -> Void
 
-let costCoinsNum = 50
+
 
 class CoinsView: UIView {
     
@@ -32,29 +32,31 @@ class CoinsView: UIView {
         
        //
         let dismissButton = UIButton()
+        dismissButton.setImage(UIImage(named: "close_popup_ic"), for: .normal)
         dismissButton.addTarget(self, action: #selector(dismissButtonClick(button:)), for: .touchUpInside)
         bottomBgView.addSubview(dismissButton)
         dismissButton.snp.makeConstraints { (make) in
-            make.width.equalTo(150)
-            make.height.equalTo(40)
-            make.centerX.equalToSuperview()
-            make.top.equalTo(bottomBgView)
+            make.width.equalTo(34)
+            make.height.equalTo(34)
+            make.right.equalToSuperview().offset(-24)
+            make.top.equalTo(bottomBgView).offset(10)
         }
         //
-        let dismissLine = UIView()
-        dismissLine.layer.cornerRadius = 2
-        dismissLine.backgroundColor = UIColor(hexString: "#D8D8D8")
-        dismissLine.isUserInteractionEnabled = false
-        bottomBgView.addSubview(dismissLine)
-        dismissLine.snp.makeConstraints {
-            $0.center.equalTo(dismissButton)
-            $0.width.equalTo(128)
-            $0.height.equalTo(4)
-        }
+//        let dismissLine = UIView()
+//        dismissLine.layer.cornerRadius = 2
+//        dismissLine.backgroundColor = UIColor(hexString: "#D8D8D8")
+//        dismissLine.isUserInteractionEnabled = false
+//        bottomBgView.addSubview(dismissLine)
+//        dismissLine.snp.makeConstraints {
+//            $0.center.equalTo(dismissButton)
+//            $0.width.equalTo(128)
+//            $0.height.equalTo(4)
+//        }
         //
         let label = UILabel()
         
-        label.text = "Currently using the VIP function, so saving will cost \(costCoinsNum) gold coins, are you sure?"
+        
+        label.text = "Use VIP function.\nCost \(CoinManager.default.coinCostCount) coins when saving, are you sure?"
         label.textAlignment = .center
         label.textColor = UIColor(hexString: "#EF4C96")
         label.font = UIFont(name: "Avenir-Heavy", size: 18)

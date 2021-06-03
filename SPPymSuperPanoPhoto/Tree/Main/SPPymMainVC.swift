@@ -65,7 +65,7 @@ extension SPPymMainVC {
             self.showPanoSelectVC()
         }
         //
-        let photoBtn = MainCenterToolBtn(frame: .zero, bgColor: UIColor(hexString: "#B7D09B") ?? .white, iconImg: UIImage(named: "home_collage_ic")!, nameTitle: "Photo Splicing")
+        let photoBtn = MainCenterToolBtn(frame: .zero, bgColor: UIColor(hexString: "#B7D09B") ?? .white, iconImg: UIImage(named: "home_collage_ic")!, nameTitle: "Photo Master")
         contentBgView.addSubview(photoBtn)
         photoBtn.snp.makeConstraints {
             $0.centerY.equalToSuperview()
@@ -175,6 +175,7 @@ extension SPPymMainVC {
         config.library.defaultMultipleSelection = true
         config.library.skipSelectionsGallery = true
         config.showsPhotoFilters = false
+        config.library.preselectedItems = nil
         let picker = YPImagePicker(configuration: config)
         picker.didFinishPicking { [unowned picker] items, cancelled in
             var imgs: [UIImage] = []
@@ -190,9 +191,9 @@ extension SPPymMainVC {
                 }
             }
             picker.dismiss(animated: true, completion: nil)
-            
-            self.showPhotoMultiEditVC(imgs: imgs)
-            
+            if !cancelled {
+                self.showPhotoMultiEditVC(imgs: imgs)
+            }
         }
         
         present(picker, animated: true, completion: nil)

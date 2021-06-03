@@ -40,7 +40,8 @@
 - (void)generateVideoWithImage:(UIImage *)image andProgressCallback:(void(^)(float progress))progressCallback andComlpetion:(void(^)(NSString *path,NSError *error))completion {
     
     self.operation = [NSBlockOperation blockOperationWithBlock:^{
-        NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"temp.mp4"];
+        
+        NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"/temp.mp4"];
         [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
         
         NSError *error = nil;
@@ -60,23 +61,30 @@
         CGFloat bitsPerPixel = 6.0;
         NSInteger bitsPerSecond = image.size.width * image.size.height * bitsPerPixel;
         NSDictionary *compressionProperties = @{ AVVideoAverageBitRateKey : @(bitsPerSecond),
-        AVVideoExpectedSourceFrameRateKey : @(45),
+        AVVideoExpectedSourceFrameRateKey : @(30),
         AVVideoMaxKeyFrameIntervalKey : @(3),
         AVVideoProfileLevelKey : AVVideoProfileLevelH264MainAutoLevel };
         
-        
+        //
         NSDictionary *videoSettings = @{AVVideoCodecKey: AVVideoCodecTypeH264,
                                         AVVideoWidthKey: [NSNumber numberWithInt:image.size.width],
                                         AVVideoHeightKey: [NSNumber numberWithInt:image.size.height],
                                         AVVideoCompressionPropertiesKey : compressionProperties
         };
         
+        NSDictionary *sourcePixelBufferAttributesDictionary = [NSDictionary dictionaryWithObjectsAndKeys: [NSNumber numberWithInt:kCVPixelFormatType_32BGRA], kCVPixelBufferPixelFormatTypeKey,
+                                                               [NSNumber numberWithInt:image.size.width], kCVPixelBufferWidthKey,
+                                                               [NSNumber numberWithInt: image.size.height], kCVPixelBufferHeightKey,
+                                                               nil];
+        
+        
+        
         AVAssetWriterInput* videoInput = [AVAssetWriterInput assetWriterInputWithMediaType:AVMediaTypeVideo outputSettings:videoSettings];
         
         NSParameterAssert([videoWriter canAddInput:videoInput]);
         [videoWriter addInput:videoInput];
         
-        AVAssetWriterInputPixelBufferAdaptor *adaptor = [AVAssetWriterInputPixelBufferAdaptor assetWriterInputPixelBufferAdaptorWithAssetWriterInput:videoInput sourcePixelBufferAttributes:nil];
+        AVAssetWriterInputPixelBufferAdaptor *adaptor = [AVAssetWriterInputPixelBufferAdaptor assetWriterInputPixelBufferAdaptorWithAssetWriterInput:videoInput sourcePixelBufferAttributes:sourcePixelBufferAttributesDictionary];
         //Start a session:
         BOOL status = [videoWriter startWriting];        
         [videoWriter startSessionAtSourceTime:kCMTimeZero];

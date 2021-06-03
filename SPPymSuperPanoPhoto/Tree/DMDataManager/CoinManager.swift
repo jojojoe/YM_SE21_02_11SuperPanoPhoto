@@ -26,21 +26,7 @@ extension Notice.Names {
 
 
 
-class StoreItem: Identifiable, ObservableObject {
-    var id: Int = 0
-    var iapId: String = ""
-    var coin: Int  = 0
-    @Published var price: String = ""
-    var color: String = ""
-    init(id: Int, iapId: String, coin: Int, price: String, color: String) {
-        self.id = id
-        self.iapId = iapId
-        self.coin = coin
-        self.price = price
-        self.color = color
-        
-    }
-}
+
 
 
 class CoinManager: ObservableObject {
@@ -69,14 +55,14 @@ class CoinManager: ObservableObject {
         
         // iap items list
         
-        let iapItem0 = StoreItem.init(id: 0, iapId: "com.likespicinsta.MoreFans.listone", coin: 100, price: "$0.99", color: "#FFDCEC")
-        let iapItem1 = StoreItem.init(id: 1, iapId: "com.likespicinsta.MoreFans.listtwo", coin: 200, price: "$1.99", color: "#C9FFEE")
-        let iapItem2 = StoreItem.init(id: 2, iapId: "com.likespicinsta.MoreFans.listthree", coin: 500, price: "$3.99", color: "#FFDCEC")
-        let iapItem3 = StoreItem.init(id: 3, iapId: "com.likespicinsta.MoreFans.listfour", coin: 800, price: "$6.99", color: "#C9FFEE")
-        let iapItem4 = StoreItem.init(id: 4, iapId: "com.likespicinsta.MoreFans.listfive", coin: 1500, price: "$9.99", color: "#FFDCEC")
-        let iapItem5 = StoreItem.init(id: 5, iapId: "com.likespicinsta.MoreFans.listsix", coin: 1800, price: "$13.99", color: "#C9FFEE")
-        let iapItem6 = StoreItem.init(id: 6, iapId: "com.likespicinsta.MoreFans.listseven", coin: 2500, price: "$16.99", color: "#FFDCEC")
-        let iapItem7 = StoreItem.init(id: 7, iapId: "com.likespicinsta.MoreFans.listeight", coin: 3500, price: "$19.99", color: "#C9FFEE")
+        let iapItem0 = StoreItem.init(id: 0, iapId: "com.superlikesfans.instapic.listone", coin: 100, price: "$0.99", color: "#FFDCEC")
+        let iapItem1 = StoreItem.init(id: 1, iapId: "com.superlikesfans.instapic.listtwo", coin: 200, price: "$1.99", color: "#C9FFEE")
+        let iapItem2 = StoreItem.init(id: 2, iapId: "com.superlikesfans.instapic.listthree", coin: 500, price: "$3.99", color: "#FFDCEC")
+        let iapItem3 = StoreItem.init(id: 3, iapId: "com.superlikesfans.instapic.listfour", coin: 800, price: "$6.99", color: "#C9FFEE")
+        let iapItem4 = StoreItem.init(id: 4, iapId: "com.superlikesfans.instapic.listfive", coin: 1500, price: "$9.99", color: "#FFDCEC")
+        let iapItem5 = StoreItem.init(id: 5, iapId: "com.superlikesfans.instapic.listsix", coin: 1800, price: "$13.99", color: "#C9FFEE")
+        let iapItem6 = StoreItem.init(id: 6, iapId: "com.superlikesfans.instapic.listseven", coin: 2500, price: "$16.99", color: "#FFDCEC")
+        let iapItem7 = StoreItem.init(id: 7, iapId: "com.superlikesfans.instapic.listeight", coin: 3500, price: "$19.99", color: "#C9FFEE")
         
         
         coinIpaItemList = [iapItem0, iapItem1, iapItem2, iapItem3, iapItem4, iapItem5, iapItem6, iapItem7]

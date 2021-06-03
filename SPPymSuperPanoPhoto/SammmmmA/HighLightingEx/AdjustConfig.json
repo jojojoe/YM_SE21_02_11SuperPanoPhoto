@@ -1,0 +1,24 @@
+{
+  "AdInfo": {
+        
+        "Interstitial": {
+            "id": "e24b92947fcf4f538c501b66ae4a5130",
+            "testID": "4f117153f5c24fa6a3a92b818a5eb630"
+        },
+        "Rewarded": {
+            "id": "988e5aa9fc0c433e9247138c28245a38",
+            "testID": "8f000bd5e00246de9c789eed39ff6096"
+        },
+    },
+ 
+    "Adjust": {
+        "app_token":"35eatakch9c0",
+        "app_launch":"",
+        "baseline_show_1st":"",
+        "baseline_show_total":"",
+        "login_button_1ststart": "",
+        "login_button_start_total":"",
+        "login_button_1stclick":"bazw8v",
+        "login_button_click_total":"as0nnw"
+    }
+}

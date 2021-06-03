@@ -7,7 +7,7 @@
 
 import UIKit
 import Photos
-
+import DeviceKit
 
 class SSPPhotoMultiSlideEditVC: UIViewController {
     var backBtn = UIButton(type: .custom)
@@ -99,20 +99,31 @@ extension SSPPhotoMultiSlideEditVC {
     
     func setupContentView() {
         //
-        let canvasWidth: CGFloat = UIScreen.main.bounds.width
+        var topOff: CGFloat = 100
         
-        let photoCanvasView = PhotoMultiCanvasView(frame: CGRect(x: 0, y: 100, width: canvasWidth, height: canvasWidth), mobanName: mobanList.first ?? "moban1_1", images: contentImgs)
+            
+        var canvasWidth: CGFloat = UIScreen.main.bounds.width
+        if Device.current.diagonal <= 5.5 || Device.current.diagonal >= 7.5 {
+            canvasWidth = 280
+            topOff = 65
+        }
+        let leftOff: CGFloat = (UIScreen.main.bounds.width - canvasWidth) / 2
+        
+        
+        let photoCanvasView = PhotoMultiCanvasView(frame: CGRect(x: leftOff, y: topOff, width: canvasWidth, height: canvasWidth), mobanName: mobanList.first ?? "moban1_1", images: contentImgs)
+        photoCanvasView.clipsToBounds = true
         self.photoCanvasView = photoCanvasView
         view.addSubview(photoCanvasView)
+        
         //
-        let slideHorVerCanvasView = SSPSlideHorVerCanvasView(frame: CGRect(x: 0, y: 100, width: canvasWidth, height: canvasWidth), images: contentImgs)
+        let slideHorVerCanvasView = SSPSlideHorVerCanvasView(frame: CGRect(x: leftOff, y: topOff, width: canvasWidth, height: canvasWidth), images: contentImgs)
         self.slideHorVerCanvasView = slideHorVerCanvasView
         view.addSubview(slideHorVerCanvasView)
         
         //
         
-        let height = screen_hight_CGFloat - (100 + screen_width_CGFloat + 20)
-        let bottomFrame = CGRect(x: 0, y: 100 + screen_width_CGFloat + 20, width: screen_width_CGFloat, height: height)
+        let height = screen_hight_CGFloat - (topOff + canvasWidth + 10)
+        let bottomFrame = CGRect(x: 0, y: topOff + canvasWidth + 10, width: screen_width_CGFloat, height: height)
         let bottomToolBar = SSPMultiSlideToolView(frame: bottomFrame, viewHeight: height, mobanList: mobanList)
         view.addSubview(bottomToolBar)
         bottomToolBar.filterClickBlock = {
@@ -127,12 +138,12 @@ extension SSPPhotoMultiSlideEditVC {
                 }
                 self.contentImgsFiltered = filteredImgs
                 if self.photoCanvasView?.isHidden == false {
-                    self.photoCanvasView?.updateFilter(filteredImgs: filteredImgs)
+                    
                 } else {
-                    self.slideHorVerCanvasView?.updateContentFilteredImgs(imgs: filteredImgs)
+                    
                 }
-                
-                
+                self.photoCanvasView?.updateFilter(filteredImgs: filteredImgs)
+                self.slideHorVerCanvasView?.updateContentFilteredImgs(imgs: filteredImgs)
             }
         }
         bottomToolBar.mobanClickBlock = {
@@ -184,8 +195,16 @@ extension SSPPhotoMultiSlideEditVC {
 
         if let img = photoCanvasView?.screenshot {
             if isPro == true {
-                let costheight: CGFloat = screen_hight_CGFloat - 100 - screen_width_CGFloat - 20
-                let costframe = CGRect(x: 0, y: 100 + screen_width_CGFloat + 20, width: screen_width_CGFloat, height: costheight)
+//                let costheight: CGFloat = screen_hight_CGFloat - 100 - screen_width_CGFloat - 20
+//                let costframe = CGRect(x: 0, y: 100 + screen_width_CGFloat + 20, width: screen_width_CGFloat, height: costheight)
+                
+                var costheight: CGFloat = screen_hight_CGFloat - 100 - screen_width_CGFloat - 20
+                
+                if Device.current.diagonal <= 5.5 || Device.current.diagonal >= 7.9 {
+                    costheight = 312
+                }
+                let costframe = CGRect(x: 0, y: screen_hight_CGFloat - costheight, width: screen_width_CGFloat, height: costheight)
+                
                 let costView = CoinsView(frame: costframe, viewHeight: costheight)
                 self.view.addSubview(costView)
                 costView.backgroundColor = .clear
@@ -281,7 +300,7 @@ extension SSPPhotoMultiSlideEditVC {
         
         DispatchQueue.main.async {
             let title = ""
-            let message = "The Photo Saved Successfully In Album."
+            let message = "Photo Storage Successful."
             let okText = "OK"
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let okButton = UIAlertAction(title: okText, style: .cancel, handler: { (alert) in
@@ -316,7 +335,11 @@ extension SSPPhotoMultiSlideEditVC {
     func showCoinNotEnoughAlert() {
         
         showAlert(title: "", message: "Coins shortage. please buy coins first.", buttonTitles: ["Ok"], highlightedButtonIndex: 0) { (index) in
-            
+            DispatchQueue.main.async {
+                [weak self] in
+                guard let `self` = self else {return}
+                self.navigationController?.pushViewController(SPPymStoreVC())
+            }
         }
     }
 }

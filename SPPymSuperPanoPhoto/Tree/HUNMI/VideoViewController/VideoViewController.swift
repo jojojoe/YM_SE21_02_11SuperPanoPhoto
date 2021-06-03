@@ -7,9 +7,9 @@
 //
 
 import UIKit
-
+import DeviceKit
 import Photos
-
+import Then
 
 
 class VideoViewController: UIViewController {
@@ -59,10 +59,13 @@ class VideoViewController: UIViewController {
             tool.thumbnailImageView.image = targetimage
             tool.delegate = self
             bottomBgView.addSubview(tool)
-            
+            var height: CGFloat = 170
+            if Device.current.diagonal <= 5.5 || Device.current.diagonal >= 7.9 {
+                height = 145
+            }
             tool.snp.makeConstraints { (make) in
                 make.left.right.equalTo(0)
-                make.height.equalTo(170)
+                make.height.equalTo(height)
                 make.centerY.equalToSuperview()
             }
         })
@@ -111,9 +114,12 @@ class VideoViewController: UIViewController {
     
     @objc func saveImageButtonClick(button: UIButton) {
         
-        let costheight: CGFloat = screen_hight_CGFloat - 100 - screen_width_CGFloat - 20
+        var costheight: CGFloat = screen_hight_CGFloat - 100 - screen_width_CGFloat - 20
         
-        let costframe = CGRect(x: 0, y: 100 + screen_width_CGFloat + 20, width: screen_width_CGFloat, height: costheight)
+        if Device.current.diagonal <= 5.5 || Device.current.diagonal >= 7.9 {
+            costheight = 312
+        }
+        let costframe = CGRect(x: 0, y: screen_hight_CGFloat - costheight, width: screen_width_CGFloat, height: costheight)
         let costView = CoinsView(frame: costframe, viewHeight: costheight)
         self.view.addSubview(costView)
         costView.backgroundColor = .clear
@@ -139,7 +145,11 @@ class VideoViewController: UIViewController {
     func showCoinNotEnoughAlert() {
         
         showAlert(title: "", message: "Coins shortage. please buy coins first.", buttonTitles: ["Ok"], highlightedButtonIndex: 0) { (index) in
-            
+            DispatchQueue.main.async {
+                [weak self] in
+                guard let `self` = self else {return}
+                self.navigationController?.pushViewController(SPPymStoreVC())
+            }
         }
     }
     
@@ -186,12 +196,14 @@ class VideoViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             //            let urlStr = self.saveImageToSandbox(image: self.editView!.contentImageView.image ?? UIImage())
             //            var result = UIImage.init(contentsOfFile: urlStr)
+            // 800
             var result = self.editView!.contentImageView.image
-            if isIpad {
-                result = result!.originImageToScaleSize(size: CGSize(width: (self.editView?.contentImageView.frame.size.width ?? 1), height: (self.editView?.contentImageView.frame.size.height ?? 1)))
-            } else {
-                result = result!.originImageToScaleSize(size: CGSize(width: (self.editView?.contentImageView.frame.size.width ?? 1) * 2, height: (self.editView?.contentImageView.frame.size.height ?? 1) * 2))
-            }
+            result = result?.sd_resizedImage(with: CGSize(width: 4048, height: (4048 / result!.size.width) * result!.size.height), scaleMode: .aspectFit)
+//            if isIpad {
+//                result = result!.originImageToScaleSize(size: CGSize(width: (self.editView?.contentImageView.frame.size.width ?? 1), height: (self.editView?.contentImageView.frame.size.height ?? 1)))
+//            } else {
+//                result = result!.originImageToScaleSize(size: CGSize(width: (self.editView?.contentImageView.frame.size.width ?? 1) * 2, height: (self.editView?.contentImageView.frame.size.height ?? 1) * 2))
+//            }
             
             self.imageToVideo.convert(result!, toVideoProgressCallback: { (progress) in
                 dPrint(item: progress)
@@ -261,6 +273,10 @@ class VideoViewController: UIViewController {
                                 self.saveVideoToAlbum(videoUrl: PNVideoWriter.outputUrl())
                             })
                         }
+                    } else {
+                        HUD.hide()
+                        self.showAlert(title: "", message: error.localizedDescription)
+                        debugPrint(error.localizedDescription)
                     }
                 }
             }

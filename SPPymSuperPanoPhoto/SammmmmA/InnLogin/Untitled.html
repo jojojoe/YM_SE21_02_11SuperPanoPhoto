@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .loading{
+                width: 160px;
+                height: 80px;
+                margin-left: 15px;
+                
+            }
+            .loading span{
+                display: inline-block;
+                width: 24px;
+                height: 100%;
+                border-radius: 4px;
+                background: lightgreen;
+                -webkit-animation: load 1s ease infinite;
+            }
+            @-webkit-keyframes load{
+                0%,100%{
+                    height: 80px;
+                    background: lightgreen;
+                }
+                50%{
+                    height: 110px;
+                    margin: -15px 0;
+                    background: lightblue;
+                }
+            }
+            .loading span:nth-child(2){
+                -webkit-animation-delay:0.2s;
+            }
+            .loading span:nth-child(3){
+                -webkit-animation-delay:0.4s;
+            }
+            .loading span:nth-child(4){
+                -webkit-animation-delay:0.6s;
+            }
+            .loading span:nth-child(5){
+                -webkit-animation-delay:0.8s;
+            }
+</style>
+</head>
+<body>
+    <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+</body>
+</html>

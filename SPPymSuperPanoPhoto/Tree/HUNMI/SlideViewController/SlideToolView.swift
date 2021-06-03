@@ -98,7 +98,8 @@ class SlideToolView: UIView {
         addSubview(numberlabel)
         numberlabel.snp.makeConstraints {
             $0.left.equalTo(60)
-            $0.top.equalTo(size9_16Btn.snp.bottom).offset(66)
+//            $0.top.equalTo(size9_16Btn.snp.bottom).offset(66)
+            $0.bottom.equalToSuperview().offset(-24)
             $0.height.greaterThanOrEqualTo(1)
             $0.width.greaterThanOrEqualTo(1)
         }
